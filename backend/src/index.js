@@ -21,6 +21,14 @@ app.use('/api/chat', chat);
 
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 
+app.get('/', (_, res) => {
+  res.json({
+    name: 'English Learning API',
+    message: 'API del backend. Usa la app en https://english-learnin-app.vercel.app',
+    health: '/api/health',
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Servidor en http://localhost:${PORT}`);
 });
