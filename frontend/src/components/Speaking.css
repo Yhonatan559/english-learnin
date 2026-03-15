@@ -1,0 +1,56 @@
+.speaking-box {
+  margin: 1rem 0;
+}
+
+.speaking-instruction {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.speaking-btn {
+  padding: 0.75rem 1.25rem;
+  background: var(--surface2);
+  color: var(--text);
+}
+
+.speaking-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.speaking-btn.listening {
+  background: var(--accent);
+  color: white;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% { opacity: 0.85; }
+}
+
+.speaking-transcript {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.speaking-feedback {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.speaking-feedback.correct {
+  color: var(--success);
+}
+
+.speaking-feedback.retry {
+  color: var(--warning);
+}
+
+.speaking-error {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #f87171;
+}

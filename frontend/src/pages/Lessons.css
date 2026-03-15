@@ -1,0 +1,202 @@
+.page-title {
+  font-size: 1.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.lessons-intro {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  max-width: 580px;
+  line-height: 1.6;
+}
+
+.level-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.level-tabs button {
+  padding: 0.55rem 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.level-tabs button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.level-tabs button.active {
+  background: var(--gradient-primary);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 14px -2px rgba(99, 102, 241, 0.45);
+}
+
+.lessons-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.15rem;
+}
+
+.lessons-list .lesson-card {
+  display: block;
+  padding: 1.35rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(30, 30, 45, 0.9) 0%, rgba(22, 22, 35, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.lessons-list .lesson-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-card);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.lessons-list .lesson-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.lessons-list .lesson-card:hover::before {
+  opacity: 1;
+}
+
+.lesson-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.lesson-stage {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--success);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem;
+  background: var(--success-soft);
+  border-radius: 6px;
+}
+
+.lesson-level {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.5rem;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 6px;
+}
+
+.lesson-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.6rem 0 0.3rem;
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.lesson-stage-title {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.lessons-list .progress-bar {
+  margin-bottom: 0.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.lesson-progress-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.vocabulary-section {
+  margin-top: 3.5rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.vocabulary-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+  opacity: 0.6;
+}
+
+.vocabulary-section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #e0e7ff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.vocabulary-section-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.55;
+}
+
+.vocabulary-list {
+  margin-top: 0;
+}
+
+.vocabulary-list .lesson-card:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 12px 40px -8px rgba(34, 211, 238, 0.2);
+}
+
+.vocabulary-card .lesson-stage {
+  background: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+}
+
+.vocabulary-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}

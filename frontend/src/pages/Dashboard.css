@@ -1,0 +1,114 @@
+.page-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  background: linear-gradient(145deg, rgba(30, 30, 45, 0.9) 0%, rgba(22, 22, 35, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(99, 102, 241, 0.25);
+  box-shadow: 0 8px 24px -6px rgba(99, 102, 241, 0.2);
+}
+
+.stat-value {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.dashboard-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.progress-list {
+  list-style: none;
+}
+
+.progress-item {
+  margin-bottom: 0.85rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.2s;
+}
+
+.progress-item:hover {
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.progress-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-item .badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 8px;
+  color: var(--accent-light);
+}
+
+.progress-item .progress-bar {
+  margin-bottom: 0.4rem;
+}
+
+.progress-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.muted {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-actions .btn-primary {
+  box-shadow: 0 4px 14px -2px rgba(99, 102, 241, 0.4);
+}
+
+.dashboard-actions .btn-primary:hover {
+  transform: translateY(-2px);
+}
